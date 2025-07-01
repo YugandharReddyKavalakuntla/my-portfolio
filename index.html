@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img style="border-radius: 20px;"  src="./assets/Yugandhar_Pic.jpg" alt="Yugandhar Reddy Kavalakuntla" width="80" />
+        </figure>
+        <div class="info-content">
+          <h1 class="name">Yugandhar Reddy </h1>
+          <h1 class="name">Kavalakuntla</h1>
+          <p class="title">Java Developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:yugandhar5557@gmail.com" class="contact-link">yugandhar5557@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+916302096448" class="contact-link">+91 6302096448</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2002-05-28">May 28, 2002</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Hyderabad, Telangana, India</address>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+        </ul>
+      </nav>
+
+      <!-- About Section -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+        <section class="about-text">
+          <p>I’m a Full Stack Java Developer from Hyderabad, India, passionate about building secure, user-friendly, and scalable web applications. With hands-on training from Tata STRIVE and practical experience in Java, Spring Boot, React, and SQL, I enjoy transforming real-world requirements into clean, functional, and intuitive solutions.</p>
+          <p>My job is to develop web applications that are not only robust and efficient but also visually engaging and easy to navigate. I add a personal touch to every project I work on—whether it’s implementing secure authentication systems or building dynamic dashboards—ensuring the final product is both practical and polished.</p>
+          <p>My goal is to deliver technology solutions that communicate purpose, solve problems, and reflect a strong, user-centered design philosophy. I'm currently working on BookNest, a full-stack online e-library, and eager to contribute to innovative development teams.</p>
+        </section>
+
+
+        <section class="skill" style="
+          background: var(--eerie-black-2);
+          padding: 20px;
+          border-radius: 15px;
+          box-shadow: var(--shadow-2);
+          margin-top: 20px;
+        ">
+          <h3 class="h3" style="
+            font-size: var(--fs-2);
+            margin-bottom: 15px;
+            color: var(--orange-yellow-crayola);
+          ">My Skills</h3>
+
+          <ul class="skills-list" style="
+            list-style: none;
+            padding-left: 0;
+            color: var(--light-gray);
+            font-size: var(--fs-6);
+            font-weight: var(--fw-300);
+            line-height: 1.8;
+          ">
+            <li><strong style="color: var(--vegas-gold);">Programming Languages:</strong> Java, SQL, HTML, CSS, JavaScript</li>
+            <li><strong style="color: var(--vegas-gold);">Frameworks/Libraries:</strong> Spring Boot, React, Bootstrap</li>
+            <li><strong style="color: var(--vegas-gold);">Operating Systems:</strong> Linux</li>
+            <li><strong style="color: var(--vegas-gold);">Tools:</strong> Git, GitHub</li>
+          </ul>
+        </section>
+
+
+    
+        <section class="download-resume" style="margin-top: 40px; text-align: center;">
+        <h3 class="h3 article-title">Download My Resume</h3>
+        <a href="./assets/Yugandhar_Reddy_Kavalakuntla.pdf" target="_blank" download
+          style="
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            background: var(--border-gradient-onyx);
+            color: var(--orange-yellow-crayola);
+            font-size: var(--fs-5);
+            font-weight: var(--fw-500);
+            border-radius: 14px;
+            box-shadow: var(--shadow-2);
+            transition: background var(--transition-1);
+            text-decoration: none;
+          ">
+          <ion-icon name="cloud-download-outline" style="font-size: 20px;"></ion-icon>
+          Download Resume (PDF)
+        </a>
+      </section>
+
+
+      </article>
+
+      <!-- Resume Section -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <h3 class="h3">Education</h3>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4">Bachelor of Technology in Computer Science</h4>
+              <span>GITAM University - Hyderabad | CGPA: 7.91</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">11th & 12th Grade - Board of Intermediate Education</h4>
+              <span>Narayana Jr College - Kurnool | CGPA: 9.13</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">10th Grade - Board of Secondary Education</h4>
+              <span>Sri Chaitanya E.M. School - Kurnool | CGPA: 9.8</span>
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <h3 class="h3">Experience</h3>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4">Junior Full Stack Java Developer Trainee</h4>
+              <span>Tata STRIVE, Hyderabad | April 2025 – Present</span>
+              <p class="about-text">Undergoing comprehensive training in Full Stack Development including Java, SQL, HTML, CSS, JavaScript, React, Spring, Spring Boot, Linux, Git/GitHub, and Agile methodologies. Collaborating on BookNest, an eLibrary project, applying learned technologies to build a functional web application with end-to-end features.</p>
+            </li>
+          </ol>
+        </section>
+        
+
+        <section class="skill" style="
+          background: var(--eerie-black-2);
+          padding: 20px;
+          border-radius: 15px;
+          box-shadow: var(--shadow-2);
+          margin-top: 20px;
+        ">
+          <h3 class="h3" style="
+            font-size: var(--fs-2);
+            margin-bottom: 15px;
+            color: var(--orange-yellow-crayola);
+          ">My Skills</h3>
+
+          <ul class="skills-list" style="
+            list-style: none;
+            padding-left: 0;
+            color: var(--light-gray);
+            font-size: var(--fs-6);
+            font-weight: var(--fw-300);
+            line-height: 1.8;
+          ">
+            <li><strong style="color: var(--vegas-gold);">Programming Languages:</strong> Java, SQL, HTML, CSS, JavaScript</li>
+            <li><strong style="color: var(--vegas-gold);">Frameworks/Libraries:</strong> Spring Boot, React, Bootstrap</li>
+            <li><strong style="color: var(--vegas-gold);">Operating Systems:</strong> Linux</li>
+            <li><strong style="color: var(--vegas-gold);">Tools:</strong> Git, GitHub</li>
+          </ul>
+        </section>
+
+
+      </article>
+
+      
+    </div>
+  </main>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
